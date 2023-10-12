@@ -25,7 +25,13 @@ public class Main {
         Reserva nuevaReserva = new Reserva("Estudio", fechaHoraReserva);
         usuarioPrueba.modificar(1,nuevaReserva);
 
+        //Visualizacion agenda
+        System.out.println("========== Nueva Agenda ==========");
+        usuarioPrueba.mostrarAgenda();
+
         //Eliminacion agenda
+
+        usuarioPrueba.eliminar(2);
 
         //Visualizacion agenda
         System.out.println("========== Nueva Agenda ==========");
