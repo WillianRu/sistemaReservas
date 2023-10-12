@@ -18,6 +18,17 @@ public class Main {
         Reserva reservaTres = new Reserva("Restaurante", fechaHoraReserva);
         usuarioPrueba.agendar(reservaTres);
 
+        //Visualizacion agenda
+        usuarioPrueba.mostrarAgenda();
+
+        //Modificacion agenda
+        Reserva nuevaReserva = new Reserva("Estudio", fechaHoraReserva);
+        usuarioPrueba.modificar(1,nuevaReserva);
+
+        //Eliminacion agenda
+
+        //Visualizacion agenda
+        System.out.println("========== Nueva Agenda ==========");
         usuarioPrueba.mostrarAgenda();
     }
 }

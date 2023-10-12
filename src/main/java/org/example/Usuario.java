@@ -21,12 +21,12 @@ public class Usuario {
     public void agendar(Reserva reserva){
         reservas.add(reserva);
     }
-    public void eliminar(int indice, Reserva reserva){
+    public void modificar(int indice, Reserva reserva){
         if (indice >= 0 && indice < reservas.size()) {
             reservas.set(indice, reserva);
         }
     }
-    public void modificar(int indice){
+    public void eliminar(int indice){
         if (indice >= 0 && indice < reservas.size()) {
             reservas.remove(indice);
         }
