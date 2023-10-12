@@ -31,4 +31,12 @@ public class Usuario {
             reservas.remove(indice);
         }
     }
+
+    //mostrar agenda
+
+    public void mostrarAgenda (){
+        for (Reserva reserva : reservas) {
+            System.out.println("Tipo de reserva: " + reserva.getTipoReserva() + ", Fecha y hora: " + reserva.getFechaHora());
+        }
+    }
 }

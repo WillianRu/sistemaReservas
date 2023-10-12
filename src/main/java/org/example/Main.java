@@ -14,5 +14,10 @@ public class Main {
 
         Reserva reservaDos = new Reserva("Hospital", fechaHoraReserva);
         usuarioPrueba.agendar(reservaDos);
+
+        Reserva reservaTres = new Reserva("Restaurante", fechaHoraReserva);
+        usuarioPrueba.agendar(reservaTres);
+
+        usuarioPrueba.mostrarAgenda();
     }
 }
